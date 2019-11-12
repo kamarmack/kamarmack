@@ -45,186 +45,20 @@ function SectionProgress() {
   };
   return (
     <>
-      <div className="section">
+      <div className="section" style={{marginTop:'0px', paddingTop:'0px',marginBottom:'1em', paddingBottom:'1em'}}>
         <Container>
-          <Row>
-            <Col md="6">
+          <Row >
+            <Col md="12" >
               <div className="title">
-                <h3>Progress Bar</h3>
-                <br />
+                <h2 style={{textAlign:'center'}}>About Me</h2>
               </div>
-              <Progress
-                max="100"
-                value="25"
-                barClassName="progress-bar-success"
-              />
-              <br />
-              <Progress max="100" value="50" barClassName="progress-bar-info" />
-              <br />
-              <Progress
-                max="100"
-                value="100"
-                barClassName="progress-bar-danger"
-              />
-              <br />
-              <Progress multi>
-                <Progress bar max="100" value="15" />
-                <Progress
-                  bar
-                  barClassName="progress-bar-success"
-                  max="100"
-                  value="30"
-                />
-                <Progress
-                  bar
-                  barClassName="progress-bar-warning"
-                  max="100"
-                  value="20"
-                />
-              </Progress>
-            </Col>
-            <Col md="6">
-              <div className="title">
-                <h3>Pagination</h3>
-                <br />
-              </div>
-              <nav aria-label="Page navigation example">
-                <Pagination>
-                  <PaginationItem>
-                    <PaginationLink
-                      aria-label="Previous"
-                      href="#pablo"
-                      onClick={e => e.preventDefault()}
-                    >
-                      <i aria-hidden={true} className="fa fa-angle-left" />
-                      <span className="sr-only">Previous</span>
-                    </PaginationLink>
-                  </PaginationItem>
-                  <PaginationItem>
-                    <PaginationLink
-                      href="#pablo"
-                      onClick={e => e.preventDefault()}
-                    >
-                      1
-                    </PaginationLink>
-                  </PaginationItem>
-                  <PaginationItem>
-                    <PaginationLink
-                      href="#pablo"
-                      onClick={e => e.preventDefault()}
-                    >
-                      2
-                    </PaginationLink>
-                  </PaginationItem>
-                  <PaginationItem>
-                    <PaginationLink
-                      href="#pablo"
-                      onClick={e => e.preventDefault()}
-                    >
-                      3
-                    </PaginationLink>
-                  </PaginationItem>
-                  <PaginationItem>
-                    <PaginationLink
-                      href="#pablo"
-                      onClick={e => e.preventDefault()}
-                    >
-                      4
-                    </PaginationLink>
-                  </PaginationItem>
-                  <PaginationItem>
-                    <PaginationLink
-                      href="#pablo"
-                      onClick={e => e.preventDefault()}
-                    >
-                      5
-                    </PaginationLink>
-                  </PaginationItem>
-                  <PaginationItem>
-                    <PaginationLink
-                      aria-label="Next"
-                      href="#pablo"
-                      onClick={e => e.preventDefault()}
-                    >
-                      <i aria-hidden={true} className="fa fa-angle-right" />
-                      <span className="sr-only">Next</span>
-                    </PaginationLink>
-                  </PaginationItem>
-                </Pagination>
-              </nav>
-              <br />
-              <nav aria-label="...">
-                <Pagination>
-                  <PaginationItem>
-                    <PaginationLink
-                      href="#pablo"
-                      onClick={e => e.preventDefault()}
-                      tabIndex="-1"
-                    >
-                      Previous
-                    </PaginationLink>
-                  </PaginationItem>
-                  <PaginationItem>
-                    <PaginationLink
-                      href="#pablo"
-                      onClick={e => e.preventDefault()}
-                    >
-                      1
-                    </PaginationLink>
-                  </PaginationItem>
-                  <PaginationItem>
-                    <PaginationLink
-                      href="#pablo"
-                      onClick={e => e.preventDefault()}
-                    >
-                      2
-                    </PaginationLink>
-                  </PaginationItem>
-                  <PaginationItem className="active">
-                    <PaginationLink
-                      href="#pablo"
-                      onClick={e => e.preventDefault()}
-                    >
-                      3 <span className="sr-only">(current)</span>
-                    </PaginationLink>
-                  </PaginationItem>
-                  <PaginationItem>
-                    <PaginationLink
-                      href="#pablo"
-                      onClick={e => e.preventDefault()}
-                    >
-                      4
-                    </PaginationLink>
-                  </PaginationItem>
-                  <PaginationItem>
-                    <PaginationLink
-                      href="#pablo"
-                      onClick={e => e.preventDefault()}
-                    >
-                      5
-                    </PaginationLink>
-                  </PaginationItem>
-                  <PaginationItem>
-                    <PaginationLink
-                      href="#pablo"
-                      onClick={e => e.preventDefault()}
-                    >
-                      Next
-                    </PaginationLink>
-                  </PaginationItem>
-                </Pagination>
-              </nav>
-            </Col>
-          </Row>
-          <br />
-          <Row>
-            <Col md="6">
-              <div className="title">
-                <h3>Navigation Tabs</h3>
-              </div>
+	  		</Col>
+	  		</Row>
+	  		<Row>
+	  		<Col className="ml-auto mr-auto" md="10" >
               <div className="nav-tabs-navigation">
                 <div className="nav-tabs-wrapper">
-                  <Nav id="tabs" role="tablist" tabs>
+                  <Nav id="tabs" role="tablist" tabs style={{fontSize:"small"}}>
                     <NavItem>
                       <NavLink
                         className={activeTab === "1" ? "active" : ""}
@@ -232,7 +66,7 @@ function SectionProgress() {
                           toggle("1");
                         }}
                       >
-                        Home
+                        Background
                       </NavLink>
                     </NavItem>
                     <NavItem>
@@ -242,7 +76,7 @@ function SectionProgress() {
                           toggle("2");
                         }}
                       >
-                        Profile
+                        Vision for 2030
                       </NavLink>
                     </NavItem>
                     <NavItem>
@@ -252,7 +86,7 @@ function SectionProgress() {
                           toggle("3");
                         }}
                       >
-                        Messages
+                        Fun Facts
                       </NavLink>
                     </NavItem>
                   </Nav>
@@ -260,31 +94,17 @@ function SectionProgress() {
               </div>
               <TabContent activeTab={activeTab} className="text-center">
                 <TabPane tabId="1">
-                  <p>
-                    Larger, yet dramatically thinner. More powerful, but
-                    remarkably power efficient. With a smooth metal surface that
-                    seamlessly meets the new Retina HD display.
-                  </p>
+                  <p>I am a software developer from Memphis, TN with a passion for playing and developing video games. My interest in creating my own video games began on my 16th birthday: the day that Rockstar Games released GTA V. The graphics and seemingly endless gameplay were incredible, not to mention the franchise has generated over $6 billion dollars. I am dedicated to making contributions to the next frontier of game development – immersive AR/VR.</p>
                 </TabPane>
                 <TabPane tabId="2">
-                  <p>Here is your profile.</p>
+                  <p>The coming decade has much promise. My vision for 2030 is a society fueled by clean energy, educated by personalized, affordable institutions, powered by balanced AI systems, and focused on maximizing global collaboration. I remain optimistic in our ability to realize this vision and am committed to doing my part. I&#39;m curious– what is your vision for 2030?</p>
                 </TabPane>
                 <TabPane tabId="3">
-                  <p>Here are your messages.</p>
+                  <p>I know the math behind the boardgame Candy Land<br/>I can tie 6 different types of neck-tie/bow-tie knots<br/>I only drink black coffee.<br/>I&#39;ve gone scuba diving in the Philippines</p>
                 </TabPane>
               </TabContent>
             </Col>
-            <Col md="6">
-              <div className="title">
-                <h3>Labels</h3>
-              </div>
-              <label className="label label-default mr-1">Default</label>
-              <label className="label label-primary mr-1">Primary</label>
-              <label className="label label-info mr-1">Info</label>
-              <label className="label label-success mr-1">Success</label>
-              <label className="label label-warning mr-1">Warning</label>
-              <label className="label label-danger">Danger</label>
-            </Col>
+            
           </Row>
         </Container>
       </div>{" "}

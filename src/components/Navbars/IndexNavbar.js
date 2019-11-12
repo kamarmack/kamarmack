@@ -68,10 +68,10 @@ function IndexNavbar() {
           <NavbarBrand
             data-placement="bottom"
             href="/index"
-            target="_blank"
-            title="Coded by Creative Tim"
+            title="Kamar Mack"
+	  style={{fontFamily: "'Cabin', sans-serif", fontSize:'xx-large', fontWeight:'bold', margin:"0px", padding:"0px"}}
           >
-            Paper Kit React
+            KAMAR MACK
           </NavbarBrand>
           <button
             aria-expanded={navbarCollapse}
@@ -91,12 +91,34 @@ function IndexNavbar() {
           isOpen={navbarCollapse}
         >
           <Nav navbar>
-            <NavItem>
+	      <NavItem>
+	        <NavLink
+	          data-placement="bottom"
+	          href="https://www.instagram.com/zombiesprint"
+	          target="_blank"
+	          title="Follow Zombie Sprint on Instagram"
+	        >
+	          <i className="fa fa-instagram" />
+	          <p className="d-lg-none">Instagram</p>
+	        </NavLink>
+	      </NavItem>
+          <NavItem>
+            <NavLink
+              data-placement="bottom"
+              href="https://www.linkedin.com/in/kamar-mack"
+              target="_blank"
+              title="Connect with me on LinkedIn"
+            >
+              <i className="fa fa-linkedin-square" />
+              <p className="d-lg-none">LinkedIn</p>
+            </NavLink>
+          </NavItem>
+			<NavItem>
               <NavLink
                 data-placement="bottom"
-                href="https://twitter.com/CreativeTim?ref=creativetim"
+                href="https://twitter.com/kamarmack"
                 target="_blank"
-                title="Follow us on Twitter"
+                title="Follow me on Twitter"
               >
                 <i className="fa fa-twitter" />
                 <p className="d-lg-none">Twitter</p>
@@ -105,29 +127,19 @@ function IndexNavbar() {
             <NavItem>
               <NavLink
                 data-placement="bottom"
-                href="https://www.facebook.com/CreativeTim?ref=creativetim"
+                href="https://www.facebook.com/kamar.mack"
                 target="_blank"
-                title="Like us on Facebook"
+                title="Friend me on Facebook"
               >
                 <i className="fa fa-facebook-square" />
                 <p className="d-lg-none">Facebook</p>
               </NavLink>
             </NavItem>
+            
             <NavItem>
               <NavLink
                 data-placement="bottom"
-                href="https://www.instagram.com/CreativeTimOfficial?ref=creativetim"
-                target="_blank"
-                title="Follow us on Instagram"
-              >
-                <i className="fa fa-instagram" />
-                <p className="d-lg-none">Instagram</p>
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink
-                data-placement="bottom"
-                href="https://www.github.com/CreativeTimOfficial/paper-kit-react?ref=creativetim"
+                href="https://www.github.com/kamarmack"
                 target="_blank"
                 title="Star on GitHub"
               >
@@ -136,22 +148,14 @@ function IndexNavbar() {
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink
-                href="https://demos.creative-tim.com/paper-kit-react/#/documentation?ref=pkr-index-navbar"
-                target="_blank"
-              >
-                <i className="nc-icon nc-book-bookmark" /> Documentation
-              </NavLink>
-            </NavItem>
-            <NavItem>
               <Button
                 className="btn-round"
-                color="danger"
-                href="#pablo"
+                color="warning"
+                href="mailto:kamarmack112@gmail.com"
                 target="_blank"
-                disabled
+                enabled
               >
-                Upgrade to Pro
+                CONTACT ME
               </Button>
             </NavItem>
           </Nav>

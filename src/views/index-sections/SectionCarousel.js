@@ -33,21 +33,17 @@ import {
 // core components
 
 const items = [
+    {
+      src: require("assets/img/oculus_launch_pad.jpg"),
+      altText: "Oculus LaunchPad 2019 Sponsored by Facebook",
+      caption: "Oculus LaunchPad 2019 Sponsored by Facebook"
+    },
   {
-    src: require("assets/img/soroush-karimi.jpg"),
-    altText: "Somewhere",
-    caption: "Somewhere"
+    src: require("assets/img/zombie_sprint_gameplay.png"),
+    altText: "Zombie Sprint - Race to 2020",
+    caption: "Zombie Sprint - Race to 2020"
   },
-  {
-    src: require("assets/img/federico-beccari.jpg"),
-    altText: "Somewhere else",
-    caption: "Somewhere else"
-  },
-  {
-    src: require("assets/img/joshua-stannard.jpg"),
-    altText: "Here it is",
-    caption: "Here it is"
-  }
+  
 ];
 
 function SectionCarousel() {
@@ -75,11 +71,14 @@ function SectionCarousel() {
   };
   return (
     <>
-      <div className="section pt-o" id="carousel">
+      <div className="section pt-o" id="carousel" style={{marginTop:'0px', paddingTop:'0px', marginBottom:'0px', paddingBottom:'0px'}}>
         <Container>
           <Row>
             <Col className="ml-auto mr-auto" md="8">
-              <Card className="page-carousel">
+              <div className="title" style={{textAlign:'center'}}>
+                <h2>What&#39;s New</h2>
+              </div>
+              <Card className="page-carousel" >
                 <Carousel
                   activeIndex={activeIndex}
                   next={next}
@@ -100,7 +99,7 @@ function SectionCarousel() {
                         <img src={item.src} alt={item.altText} />
                         <CarouselCaption
                           captionText={item.caption}
-                          captionHeader=""
+                          captionHeader="" 
                         />
                       </CarouselItem>
                     );
