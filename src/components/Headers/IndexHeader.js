@@ -55,7 +55,7 @@ function IndexHeader() {
         
           <Container>
             <div className="motto text-center">
-		      <h2 style={{fontWeight:"bold"}}>ZOMBIE SPRINT</h2>
+		      <h2 style={{fontWeight:"bold"}}>INTRODUCING ZOMBIE SPRINT</h2>
 		      <h4 style={{fontWeight:""}}>WANT TO PLAY?</h4>
 		      <br />
 		      <Button

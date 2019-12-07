@@ -73,7 +73,7 @@ function SectionLogin() {
 		</Col>
 		</Row>
 		<Row>
-			  <h5 className="title mx-auto text-center" >Zombie Sprint Vol. 1 is my first full-length Augmented Reality video game for iOS and Android devices. I have had an incredible time taking this video game from an idea in my notebook to a product on the App Store and Google Play. Enjoy!</h5>
+			  <h5 className="title mx-auto text-center" >Zombie Sprint is my first full-length Augmented Reality video game for iOS and Android devices. I have had an incredible time taking this video game from an idea in my notebook to a product on the App Store and Google Play. Enjoy!</h5>
 		</Row>
 		<Row>
         <Col className="mx-auto" md="8">
